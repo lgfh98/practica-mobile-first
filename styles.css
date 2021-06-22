@@ -37,3 +37,74 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
 }
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
+}
+
+.header img {
+  width: 150px;
+  height: 24px;
+  margin: 3.3rem 0;
+}
+
+.header__info-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  color: var(--just-white);
+}
+
+.header__info-container h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.header__info-container p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+  margin-bottom: 6.1rem;
+}
+
+.header__button {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  width: 22.9rem;
+  height: 4.8rem;
+  padding: 1.2rem 1.6rem;
+  background-color: var(--off-white);
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.823rem;
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__button span {
+  display: inline-block;
+  width: 1.3rem;
+  height: 0.741rem;
+  margin-left: 1rem;
+  background-image: url("assets/icons/down-arrow.svg");
+  background-size: cover;
+}
