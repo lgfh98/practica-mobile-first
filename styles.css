@@ -13,6 +13,7 @@ Convención para orden de estilos
 :root {
   /* Colores */
   --bitcoin-orange: #f7931a;
+  --orange-text: #ff9536;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -21,6 +22,8 @@ Convención para orden de estilos
   --off-white: #faf8f7;
   --just-white: #fff;
   --grey: #bababa;
+  --grey-2: #757575;
+  --grey-3: #b5b0ac;
 }
 
 * {
@@ -44,21 +47,21 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-width: 320px;
+  min-width: 32rem;
   text-align: center;
   background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
 }
 
 .header img {
-  width: 150px;
-  height: 24px;
+  width: 15rem;
+  height: 2.4rem;
   margin: 3.3rem 0;
 }
 
 .header__info-container {
   width: 90%;
-  min-width: 288px;
-  max-width: 900px;
+  min-width: 28.8rem;
+  max-width: 9rem;
   color: var(--just-white);
 }
 
@@ -89,7 +92,7 @@ body {
   background-color: var(--off-white);
   border: none;
   border-radius: 0.4rem;
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.823rem;
@@ -107,4 +110,132 @@ body {
   margin-left: 1rem;
   background-image: url("assets/icons/down-arrow.svg");
   background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+
+.main-exchange-container {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.main-exchange-container__background-img {
+  width: 20rem;
+  height: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  background-image: url("assets/img/Bitcoin.svg");
+}
+
+.main-exchange-container__title {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-exchange-container__title h2 {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-exchange-container__title p {
+  margin-bottom: 3rem;
+  font-synthesis: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: var(--grey-2);
+}
+
+.main-exchange-container__tables-container {
+  width: 70%;
+  min-width: 23.5rem;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter", sans-serif;
+}
+
+.main-exchange-container__tables-container p {
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 2.344rem;
+  font-weight: 700;
+  color: var(--orange-text);
+  margin-bottom: 1.5rem;
+}
+
+.main-exchange-container__prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 3.9rem);
+  background-color: var(--just-white);
+  border-radius: 1.5rem;
+}
+
+.main-exchange-container__cripto {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: var(--grey-3);
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.main-exchange-container__value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.main-exchange-container__value.up > span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  background-image: url("assets/icons/trending-up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-exchange-container__value.down > span {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  background-image: url("assets/icons/trending-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-exchange-container__date {
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: var(--soft-orange);
+  border-radius: 0.8rem;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.main-exchange-container__date p {
+  margin: 0;
 }
