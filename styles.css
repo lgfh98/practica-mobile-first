@@ -24,6 +24,8 @@ Convención para orden de estilos
   --grey: #bababa;
   --grey-2: #757575;
   --grey-3: #b5b0ac;
+  --grey-4: #808080;
+  --grey-5: #e5e5e5;
 }
 
 * {
@@ -168,7 +170,7 @@ main {
   font-family: "Inter", sans-serif;
 }
 
-.main-exchange-container__tables-container p {
+.main-exchange-container__main-title {
   text-align: left;
   font-size: 1.8rem;
   line-height: 2.344rem;
@@ -229,6 +231,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
+  margin-bottom: 3rem;
   padding: 0.8rem;
   background-color: var(--soft-orange);
   border-radius: 0.8rem;
@@ -236,6 +239,280 @@ main {
   font-weight: 400;
 }
 
-.main-exchange-container__date p {
+.main-exchange-container__date > p {
   margin: 0;
+}
+
+.main-producto-detail {
+  background-color: var(--black);
+  position: relative;
+}
+
+.main-producto-detail__icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 4rem;
+  height: 2.5rem;
+  background-image: url("assets/icons/batata.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-producto-detail__info {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.main-producto-detail__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: var(--just-white);
+  margin-bottom: 2.4rem;
+}
+
+.main-producto-detail__description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--grey-4);
+  margin-bottom: 2.4rem;
+}
+
+.main-product-card {
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+  border-radius: 0.4rem;
+  background-color: var(--warm-black);
+  padding: 1.5rem;
+}
+
+.main-product-card__icon {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-product-card__icon--clock {
+  background-image: url("assets/icons/clock.svg");
+}
+.main-product-card__icon--eye {
+  background-image: url("assets/icons/eye.svg");
+}
+.main-product-card__icon--dollar {
+  background-image: url("assets/icons/dollar-sign.svg");
+}
+.main-product-card__icon--check {
+  background-image: url("assets/icons/check-circle.svg");
+}
+
+.main-product-card__title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--just-white);
+}
+
+.main-product-card__description {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--grey-4);
+}
+
+.main-producto-detail__features-container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3rem;
+  min-width: 28.8rem;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.bitcoin-img-container {
+  width: 100%;
+  min-width: 32rem;
+  height: 50vh;
+  background-image: url("assets/img/bitcoinbaby2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: var(--just-white);
+}
+
+.bitcoin-img-container h2 {
+  padding-top: 6rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+}
+
+.main-plans-container {
+  width: 100%;
+  min-width: 32rem;
+  padding-bottom: 7rem;
+  padding-top: 5rem;
+  text-align: center;
+  background-color: var(--grey-5);
+}
+
+.main-plans-container__info-container {
+  width: 90%;
+  min-width: 28.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.main-plans-container__title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-plans-container__description {
+  padding-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plan-card {
+  background-color: var(--just-white);
+  position: relative;
+  width: 70%;
+  min-width: 23rem;
+  max-width: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.plan-card__top-text {
+  display: inline-block;
+  position: absolute;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  height: 3.1rem;
+  background-color: var(--bitcoin-orange);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--just-white);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plan-card__pay-type {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.plan-card__price {
+  font-weight: 700;
+  font-size: 5.2rem;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.plan-card__price-symbol {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #363636;
+  align-self: center;
+}
+
+.plan-card__price-value {
+  display: inline-block;
+}
+
+.plan-card__promo-description {
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  color: #757575;
+}
+
+.plan-card__button {
+  width: 15rem;
+  height: 4.8rem;
+  margin-top: 2rem;
+  background-color: var(--grey-5);
+  border: 0.2rem solid var(--bitcoin-orange);
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.plan-card__button span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("assets/icons/orange-right-arrow.svg");
+}
+
+/*SCROLL*/
+
+.plans-container-slider {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 3rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plan-card {
+  scroll-snap-align: center;
+}
+
+.plan-card:first-child {
+  margin-left: 1rem;
+}
+
+.plan-card:last-child {
+  margin-right: 1rem;
+}
+
+footer {
+  background-color: var(--bitcoin-orange);
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--just-white);
 }
